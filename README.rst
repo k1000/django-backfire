@@ -22,13 +22,13 @@ Settings
 	
 		{% if user.is_staff %}
 			{% csrf_token %}
-			<script src="{{ MEDIA_URL }}js/backfire/js/backfire-1.0.js"></script>
-			<script src="{{ MEDIA_URL }}js/backfire/js/example.js"></script>
+			<script src="{{ MEDIA_URL }}backfire/js/backfire-1.0.js"></script>
+			<script src="{{ MEDIA_URL }}backfire/js/example.js"></script>
 		{% endif %}
 	
 	add to your urls::
 	
-		url(r'^backfire/', include('backfire.urls')),
+		url(r'^backfire/', 'backfire.views.get_respond')),
 
 
 LICENSE
