@@ -11,6 +11,10 @@ More info how it works You can find in http://code.google.com/p/backfire/w/list
 Installation
 ------------
 
+Download and install::
+
+    pip install -e git+https://github.com/k1000/django-backfire.git#egg=backfire
+
 Place backfire somewhere on your python path
 
 Copy or link media/backfire folder to your media folder
@@ -28,7 +32,7 @@ Settings
 	
 	add to your urls::
 	
-		url(r'^backfire/', 'backfire.views.get_respond')),
+		(r'^backfire/$', 'backfire.views.get_respond'),
 
 
 LICENSE

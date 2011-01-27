@@ -27,7 +27,6 @@ def cssSaver(uri, contents):
         return False
 
 @staff_member_required
-@csrf_exempt
 def get_respond(request):
     if request.method == "POST":
         changes = request.POST.get("backfire-changes", False)
