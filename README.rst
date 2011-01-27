@@ -20,6 +20,7 @@ Settings
 	In settings.py add "backfire" to your INSTALLED_APPS
 	
 	Add backfire middleware "backfire.middleware.BackfireMiddleware" at the end of MIDDLEWARE_CLASSES or add code below at the end of the base.html template::
+	
 		{% if user.is_staff %}
 			{% csrf_token %}
 			<script src="{{ MEDIA_URL }}js/backfire/js/backfire-1.0.js"></script>
