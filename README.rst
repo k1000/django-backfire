@@ -11,9 +11,10 @@ More info how it works You can find in http://code.google.com/p/backfire/w/list
 Installation
 ------------
 
-Palce backfire somewhere on your python path
+Place backfire somewhere on your python path
 
 Copy or link media/backfire folder to your media folder
+
 Settings
 --------
 	In settings.py add "backfire" to your INSTALLED_APPS
