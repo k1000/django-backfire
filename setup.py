@@ -7,6 +7,9 @@
 import os
 from setuptools import setup, find_packages
 
+media_dirs = []
+for directory in os.walk('backfire/media'):
+    media_dirs.append(directory[0][9:]+'/*.*')
 
 setup(
     name = 'django-backfire',
@@ -29,9 +32,9 @@ setup(
         'Environment :: Other Environment',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
-        'Operating System :: MacOS :: MacOS X',
-        'Operating System :: POSIX',
+        'Operating System :: MacOS :: POSIX',
         'Programming Language :: Python',
+        'Framework :: Django',
         'Topic :: Internet',
         'Topic :: Utilities',
         'Topic :: Software Development :: Libraries :: Python Modules',
@@ -39,6 +42,6 @@ setup(
     zip_safe = False,
     packages = find_packages(exclude=['examples', 'tests']),
     include_package_data = True,
-    
+    package_data={'backfire': media_dirs},
     install_requires=['setuptools'],
 )

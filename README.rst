@@ -17,7 +17,6 @@ Copy or link media/backfire folder to your media folder
 
 Settings
 --------
-	In settings.py add "backfire" to your INSTALLED_APPS
 	
 	Add backfire middleware "backfire.middleware.BackfireMiddleware" at the end of MIDDLEWARE_CLASSES or add code below at the end of the base.html template::
 	

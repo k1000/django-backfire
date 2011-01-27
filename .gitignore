@@ -7,5 +7,5 @@ setuptools-*
 .svn/*
 .DS_Store
 *.so
-backfire.egg-info
+django_backfire.egg-info
 .coverage
