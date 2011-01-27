@@ -26,8 +26,9 @@ Settings
 			<script src="{{ MEDIA_URL }}js/backfire/js/backfire-1.0.js"></script>
 			<script src="{{ MEDIA_URL }}js/backfire/js/example.js"></script>
 		{% endif %}
-		
+	
 	add to your urls::
+	
 		url(r'^backfire/', include('backfire.urls')),
 
 
