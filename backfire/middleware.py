@@ -14,5 +14,4 @@ class BackfireMiddleware(object):
             index = content.find('</body>')
             if index == -1: return response
             response.content = content[:index] + self.html + content[index:]
-            print content[index:]
         return response
