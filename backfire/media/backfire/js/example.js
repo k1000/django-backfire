@@ -63,7 +63,7 @@ function BackfireLoadedCallback() {
           alert("Your changes have been saved.");
           break;
         case "SaveFailed":
-          alert("The changes could not be saved.\n\nVisit http://support.quplo.com to report this error.");
+          alert("The changes could not be saved.");
           break;
       }
     }
