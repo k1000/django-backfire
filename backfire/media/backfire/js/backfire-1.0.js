@@ -213,8 +213,11 @@ var Backfire = (function () {
       }
     }
   };
-
-  window.addEventListener("message", BackfireObj.postMessageListener, false)
+  if ( window.addEventListener ) {
+      window.addEventListener("message", BackfireObj.postMessageListener, false)
+  } else {
+      window.attachEvent("message", BackfireObj.postMessageListener, false)
+  }
 
   // Create the public Backfire object
   var Backfire = {};
