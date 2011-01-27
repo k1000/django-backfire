@@ -4,6 +4,7 @@ from urlparse import urlparse
 from django.conf import settings
 from django.contrib.admin.views.decorators import staff_member_required
 from django.http import HttpResponse
+#from django.views.decorators.csrf import csrf_exempt
 
 from Backfire import *
 
@@ -26,6 +27,7 @@ def cssSaver(uri, contents):
         return False
 
 @staff_member_required
+@csrf_exempt
 def get_respond(request):
     if request.method == "POST":
         changes = request.POST.get("backfire-changes", False)
