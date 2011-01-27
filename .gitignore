@@ -1,0 +1,11 @@
+wp
+*.pyc
+*#*
+build
+dist
+setuptools-*
+.svn/*
+.DS_Store
+*.so
+backfire.egg-info
+.coverage

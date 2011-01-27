@@ -1,0 +1,10 @@
+body {
+  color: blue;
+  font-size:14px;
+  font-family:Verdana;
+  width: 600px;
+}
+
+.foo {
+  color: red;
+}
