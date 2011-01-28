@@ -208,8 +208,10 @@ var Backfire = (function () {
         if (pair == "") continue;
         var nameValue = (pairs[i] + "").split(':');
         var name = nameValue[0].replace(/^\s*|\s*$/gi, "");
-        var value = nameValue[1].replace(/^\s*|\s*$/gi, "");
-        this.declarations[name] = value;
+        if ( nameValue[1] != undefined ) {
+            var value = nameValue[1].replace(/^\s*|\s*$/gi, "");
+            this.declarations[name] = value;
+        }
       }
     }
   };
