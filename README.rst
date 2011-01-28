@@ -12,7 +12,13 @@ Installation
 ------------
 
 Download and install::
+   
+    git clone https://github.com/k1000/django-backfire.git
+    cd backfire
+    python setup.py install
 
+or using pip::     
+    
     pip install -e git+https://github.com/k1000/django-backfire.git#egg=backfire
 
 Place backfire somewhere on your python path
