@@ -40,6 +40,10 @@ Settings
 	
 		(r'^backfire/$', 'backfire.views.get_respond'),
 
+USAGE
+-----
+
+You maust be logedin as staff memer in order to be able to save.
 
 LICENSE
 -------
