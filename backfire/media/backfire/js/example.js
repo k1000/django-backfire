@@ -70,5 +70,5 @@ function BackfireLoadedCallback() {
   };
   Backfire.load(backfireOptions);
 }
+window.BackfireLoadedCallback()
 
-$(document).ready( BackfireLoadedCallback() )
