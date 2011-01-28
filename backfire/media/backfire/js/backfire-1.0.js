@@ -51,7 +51,7 @@ var Backfire = (function () {
         div.setAttribute("style", "display:none");
         
         var html = "<form id='backfire-form' onsubmit='return false;' method='post' action=\"" + backfireOptions.url + "\" target='backfire-iframe'>";
-        var csrf = $("input[name=csrfmiddlewaretoken]").val();
+        var csrf = document.getElementById("csrftip").value;
         if ( csrf ) { html += "<input type=hidden name=csrfmiddlewaretoken value=\"" + csrf +'">' }; // django csrf hack
         html += "<textarea id='backfire-changes' name='backfire-changes'></textarea>";
         html += "</form>";

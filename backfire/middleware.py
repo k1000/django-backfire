@@ -4,7 +4,7 @@ from django.middleware.csrf import get_token
 class BackfireMiddleware(object):
     def process_response(self, request, response):
         html = """
-    <input type="hidden" name="csrfmiddlewaretoken" value="%s" />
+    <input type="hidden" name="csrfmiddlewaretoken" value="%s" id="csrftip" />
     <script src="%sbackfire/js/backfire-1.0.js"></script>
 	<script src="%sbackfire/js/example.js"></script>
 	""" % ( get_token(request), settings.MEDIA_URL, settings.MEDIA_URL )
