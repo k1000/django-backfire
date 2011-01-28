@@ -1,0 +1,65 @@
+#backfireBar
+{
+  z-index: 99999;
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  background: rgba(230,230,230,.7);
+  font-family: Arial;
+  -moz-box-shadow: 0 -1px 4px rgba(0,0,0,.3);
+  padding: 10px;
+  display: none;
+}
+
+#backfireBar.show { display: block; }
+
+#backfireBar a.button
+{
+  padding: 4px 10px;
+  color: White;
+  background-color: #439a3f;
+  background: green -webkit-gradient(linear, left top, left bottom, from(#439a3f), to(#166e14));
+  border: solid 1px green;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,1);
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,1);
+  box-shadow: 0 1px 1px rgba(0,0,0,1);
+  font-weight: bold;
+  text-shadow: 0 1px 1px #363;
+  text-decoration: none;
+}
+
+#backfireBar a.button:hover, a.button.hover
+{
+  color: #d1ff00;
+  background: green -webkit-gradient(linear, left top, left bottom, from(#5ab056), to(#278a25));
+}
+
+#backfireBar a.button:active
+{
+  background: green -webkit-gradient(linear, left bottom, left top, from(#439a3f), to(#166e14));
+}
+
+#backfireBar a.button.small
+{
+  background-image: none;
+  background-color: #eee;
+  background: #eee -webkit-gradient(linear, left top, left bottom, from(#eee), color-stop(0.4, #eee), to(#ccc));
+  border-color: #ccc;
+  color: #444;
+  text-shadow: 0 1px 0 #fff;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.7);
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,.7);
+  box-shadow: 0 1px 1px rgba(0,0,0,.7);
+  padding: 2px 7px;
+}
+
+#backfireBar a.button.small:hover
+{
+  color: #000;
+}
+
+#backfireBar a.button.small:active
+{
+  background: #eee -webkit-gradient(linear, left bottom, left top, from(#eee), color-stop(0.4, #eee), to(#ccc));
+}
