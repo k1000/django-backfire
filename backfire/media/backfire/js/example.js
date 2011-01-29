@@ -42,6 +42,7 @@ function BackfireLoadedCallback() {
             div.id = "backfireBar";
             var button = document.createElement("a");
             button.href = "#";
+            button.id = "backfireBtn";
             button.className = "button small";
             button.innerHTML = "Save CSS changes";
             button.onclick = function () { Backfire.save(); return false; }
@@ -58,16 +59,27 @@ function BackfireLoadedCallback() {
         case "AccessDenied":
           //alert("Access denied.\n\nAre you signed in to Quplo?");
           break;
+        case "Saving":
+          var btn = document.getElementById("backfireBtn")
+          btn.innerHTML = "Saving..."
+          btn.bgColor = "yellow"
+          break;
         case "SaveSuccessful":
+          var btn = document.getElementById("backfireBtn")
+          btn.innerHTML = "Changes Saved"
+          btn.bgColor = "green"
           Backfire.refresh();
-          alert("Your changes have been saved.");
           break;
         case "SaveFailed":
-          alert("The changes could not be saved.");
+          var btn = document.getElementById("backfireBtn")
+          btn.innerHTML = "The changes could not be saved.";
           break;
       }
     }
   };
+  function update_status( msg, color ){
+    
+  }
   Backfire.load(backfireOptions);
 }
 window.BackfireLoadedCallback()

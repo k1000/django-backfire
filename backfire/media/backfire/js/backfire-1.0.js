@@ -63,6 +63,7 @@ var Backfire = (function () {
 
     // Post changes back to the server
     save: function () {
+        postMessage("Saving", "*")
       BackfireObj.processChanges();
       var str = [];
       for (var uri in BackfireObj.changes) {
