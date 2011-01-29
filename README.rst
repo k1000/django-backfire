@@ -1,8 +1,8 @@
 About
 -----
 
-Django-backfire is integration of backfire helper for django framework.
-"In support of the "Design in the browser" philosophy Backfire allows you to save CSS changes made with Firebug, Webkit Developer Toolbar or any other clientside debugging tool."
+Django-backfire is integration of backfire helper for Django framework.
+"In support of the "Design in the browser" philosophy Backfire allows you to save CSS changes made with Firebug, Webkit Developer Toolbar or any other client side debugging tool."
 
 Original backfire code was developed by guys from http://quplo.com/ and you can find it in http://code.google.com/p/backfire/ Thanks for they efforts.
 
@@ -40,15 +40,15 @@ Settings
 	
 		(r'^backfire/$', 'backfire.views.get_respond'),
 
-USAGE
+Usage
 -----
 
-You maust be logedin as staff memer in order to be able to save.
+You must be logged in as staff member to be able to save changes.
 
 LICENSE
 -------
 
-Django-backfire is released under the MIT License. See the LICENSE_ file for more
+Django-backfire is released under the MIT License. See the LICENSE file for more
 details.
 
 .. _LICENSE: http://github.com/k1000/django-backfire/blob/master/LICENSE
