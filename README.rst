@@ -13,28 +13,28 @@ Installation
 
 steps::
     
-    1. Download and install::
+1. Download and install::
+
+        git clone https://github.com/k1000/django-backfire.git
+        cd backfire
+        python setup.py install
+
+    or using pip::     
     
-            git clone https://github.com/k1000/django-backfire.git
-            cd backfire
-            python setup.py install
+        ll -e git+https://github.com/k1000/django-backfire.git#egg=backfire
 
-       or using pip::     
-        
-            ll -e git+https://github.com/k1000/django-backfire.git#egg=backfire
+2. Copy or link media/backfire folder to your media folder
 
-    2. Copy or link media/backfire folder to your media folder
-
-Settings::
+Settings
 --------
 	
 	1. Add backfire middleware at the end of MIDDLEWARE_CLASSES::
-        
-        "backfire.middleware.BackfireMiddleware"
+
+        "backfire.middleware.BackfireMiddleware",
+ 
+    2. add to your urls.py::
 	
-	2. add to your urls.py::
-	
-		(r'^backfire/$', 'backfire.views.get_respond'),
+       (r'^backfire/$', 'backfire.views.get_respond'),
 
 Usage
 -----
