@@ -41,7 +41,7 @@ You must be logged as staff member to be able to save changes.
 LICENSE
 -------
 
-Django-backfire is released under the MIT License. See the LICENSE_ file for more
+Django-backfire is released under the MIT License. See the _LICENSE file for more
 details.
 
 .. _LICENSE: http://github.com/k1000/django-backfire/blob/master/LICENSE
