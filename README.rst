@@ -30,12 +30,13 @@ Settings
     "backfire.middleware.BackfireMiddleware",
  
 2. add to your urls.py::
+    
     (r'^backfire/$', 'backfire.views.get_respond'),
 
 Usage
 -----
 
-You must be logged in as staff member to be able to save changes.
+You must be logged as staff member to be able to save changes.
 
 LICENSE
 -------
