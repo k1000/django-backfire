@@ -19,13 +19,13 @@ Installation
 
     or using pip::     
     
-        ll -e git+https://github.com/k1000/django-backfire.git#egg=backfire
+        pip install -e git+https://github.com/k1000/django-backfire.git#egg=backfire
 
 2. Copy or link media/backfire folder to your media folder
 
 Settings
 --------
-1. Add backfire middleware at the end of MIDDLEWARE_CLASSES::
+1. Add backfire middleware at the end of MIDDLEWARE_CLASSES in settings.py file::
 
     "backfire.middleware.BackfireMiddleware",
  
