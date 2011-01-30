@@ -10,8 +10,6 @@ More info how it works You can find in http://code.google.com/p/backfire/w/list
 
 Installation
 ------------
-
-steps::
     
 1. Download and install::
 
@@ -27,14 +25,12 @@ steps::
 
 Settings
 --------
-	
-	1. Add backfire middleware at the end of MIDDLEWARE_CLASSES::
+1. Add backfire middleware at the end of MIDDLEWARE_CLASSES::
 
-        "backfire.middleware.BackfireMiddleware",
+    "backfire.middleware.BackfireMiddleware",
  
-    2. add to your urls.py::
-	
-       (r'^backfire/$', 'backfire.views.get_respond'),
+2. add to your urls.py::
+    (r'^backfire/$', 'backfire.views.get_respond'),
 
 Usage
 -----
