@@ -1,8 +1,8 @@
 About
 -----
 
+"Backfire allows you to save CSS changes made with Firebug, Webkit Developer Toolbar or any other client side debugging tool."
 Django-backfire is integration of backfire helper for Django framework.
-"In support of the "Design in the browser" philosophy Backfire allows you to save CSS changes made with Firebug, Webkit Developer Toolbar or any other client side debugging tool."
 
 Original backfire code was developed by guys from http://quplo.com/ and you can find it in http://code.google.com/p/backfire/ Thanks for they efforts.
 
