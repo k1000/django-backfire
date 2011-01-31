@@ -38,6 +38,8 @@ Usage
 
 You must be logged as staff member to be able to save changes.
 
+Works best in Firefox together with Firebug plugin + Firepicker https://addons.mozilla.org/en-EN/firefox/addon/firepicker/
+
 Issues
 ------
 
