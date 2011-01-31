@@ -212,7 +212,7 @@ var Backfire = (function () {
         
         if ( nameValue[1] == undefined ) {
             console.log(text)
-            alert("There been error in parsing CSS rules. Saving can produce unpredictable results!")
+            alert("There been error during parsing the CSS. Saving can produce unpredictable results!")
         } else {
             var value = nameValue[1].replace(/^\s*|\s*$/gi, "");
             this.declarations[name] = value;
