@@ -134,6 +134,8 @@ var Backfire = (function () {
                 else if (oldDeclaration != newDeclaration)
                   BackfireObj.addChange("c", ss.href, selectorText, declaration, newDeclaration);
               }
+            } else {
+                console.log( newRule )
             }
           }
         }

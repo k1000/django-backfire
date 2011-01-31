@@ -82,4 +82,3 @@ function BackfireLoadedCallback() {
   }
   Backfire.load(backfireOptions);
 }
-window.BackfireLoadedCallback()

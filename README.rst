@@ -38,6 +38,15 @@ Usage
 
 You must be logged as staff member to be able to save changes.
 
+Issues
+------
+
+CSS parser doesn't interpretate correctly inline media rules like::
+
+    @media print {  
+        * { color: #444; }
+    }
+
 LICENSE
 -------
 
